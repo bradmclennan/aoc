@@ -4,6 +4,8 @@ abstract class Day(private var day: Int) {
 
   fun getFilename(part: Int): String = "day${day}/part$part.txt"
 
+  fun getLines(filename: String): List<String> = this.javaClass.getResource(filename)!!.readText().lines()
+
   fun print() {
     println("Day $day Part1: ${getPart1()}, Part2: ${getPart2()}")
   }

@@ -13,8 +13,6 @@ class Day1 : Day(1) {
       .let { getSmallestPairs(it) }
       .let { getSumOfDistances(it) }
 
-  private fun getLines(filename: String): List<String> = this.javaClass.getResource(filename)!!.readText().lines()
-
   private fun getSmallestPairs(lists: Pair<List<Long>, List<Long>>): List<Pair<Long, Long>> =
     List(lists.first.size) { index ->
       getSmallestPairOfIndex(index, lists)
