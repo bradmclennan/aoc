@@ -82,6 +82,7 @@ class Day6 : Day(6) {
     getLines(getFilename(1)).map { it.split("").filter(String::isNotBlank).toMutableList() }.toList()
 
   override fun getPart2(): Any {
+    return 0
     var count = 0
     val map = getMap()
     map.forEachIndexed { j, row ->
