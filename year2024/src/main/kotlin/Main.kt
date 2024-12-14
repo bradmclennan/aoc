@@ -6,4 +6,5 @@ fun main() = listOf<Day>(
   Day5(),
   Day6(),
   Day7(),
+  Day8(),
 ).forEach(Day::print)
