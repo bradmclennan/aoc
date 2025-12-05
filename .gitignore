@@ -9,6 +9,7 @@
 # Zeppelin ignored files
 /ZeppelinRemoteNotebooks/
 .idea/
+*.iml
 out/
 year2024/build/
 year2024/.gradle/
